@@ -135,7 +135,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h1,
@@ -163,6 +163,7 @@ p {
   width: 75%;
   display: flex;
   justify-content: space-around;
+  font-family: "Rubik", sans-serif;
 }
 
 .top-nav a {
@@ -268,6 +269,7 @@ p {
 
 .bottom-content .text-container {
   padding-right: 4%;
+  font-family: "Rubik", sans-serif;
 }
 
 .bottom-content .text-container:last-child {
@@ -277,6 +279,7 @@ p {
 footer {
   width: 100%;
   background: black;
+  font-family: "Rubik", sans-serif;
 }
 
 footer nav {
@@ -291,4 +294,75 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+}
+
+/*Media Queries*/
+@media (max-width: 800px) {
+  .header-container {
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .top-nav a {
+    font-size: 1.5rem;
+  }
+
+  .top-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-content .text-container {
+    width: 90%;
+  }
+
+  .middle-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .middle-content h2 {
+    width: 90%;
+    padding: 20px 0;
+    font-size: 1.6rem;
+  }
+
+  .middle-content .boxes {
+    width: 70%;
+  }
+
+  .middle-content .boxes .box {
+    width: 35%;
+    height: 200px;
+  }
+
+  .bottom-content {
+    margin: 0 2% 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .bottom-content .text-container {
+    width: 40%;
+    height: 150px;
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  footer nav {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 40px 80px;
+    font-size: 1.8rem;
+  }
+
+  footer nav a {
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+  }
 }
